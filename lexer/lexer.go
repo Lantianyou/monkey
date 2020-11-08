@@ -8,7 +8,7 @@ type Lexer struct {
 	input        string
 	position     int
 	readPosition int
-	ch           byte
+	ch           byte // l[position] = ch
 }
 
 func New(input string) *Lexer {
@@ -24,7 +24,7 @@ func (l *Lexer) readChar() {
 		l.ch = l.input[l.readPosition]
 	}
 	l.position = l.readPosition
-	l.readPosition += 1
+	l.readPosition++
 }
 
 func (l *Lexer) NextToken() token.Token {
