@@ -59,6 +59,6 @@ func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
 		t.Errorf("'s.Name got %s' got=%s", name, letStmt.Name)
 		return false
 	}
-	
+
 	return true
 }

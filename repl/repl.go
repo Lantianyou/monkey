@@ -9,7 +9,7 @@ import (
 )
 
 // PROMPT 字符
-const PROMPT = ">>"
+const PROMPT = ">> "
 
 // Start 代表调用
 func Start(in io.Reader, out io.Writer) {
