@@ -6,6 +6,17 @@ import (
 	"monkey/token"
 )
 
+const (
+	_ int = iota
+	LOWEST
+	EQUALS
+	LESSGREATER
+	SUM
+	PRODUCT // *
+	PREFIX  // !x or -X
+	CALL    //fun(x)
+)
+
 type Parser struct {
 	l *lexer.Lexer
 

@@ -8,8 +8,10 @@ import (
 	"monkey/token"
 )
 
+// PROMPT 字符
 const PROMPT = ">>"
 
+// Start 代表调用
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
