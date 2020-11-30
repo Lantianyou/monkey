@@ -15,7 +15,7 @@ const (
 	IDENT = "IDENT" // foo, bar, x, y
 	INT   = "INT"   // 1,2,3
 
-	// Operators
+	// 操作符
 	ASSIGN   = "="
 	PLUS     = "+"
 	MINUS    = "-"
@@ -24,7 +24,7 @@ const (
 	SLASH    = "/"
 
 	LT = "<"
-	RT = ">"
+	GT = ">"
 
 	// Delimiters
 	COMMA     = ","

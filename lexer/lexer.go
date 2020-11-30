@@ -7,8 +7,8 @@ import (
 type Lexer struct {
 	input        string
 	position     int
-	readPosition int
-	ch           byte // l[position] = ch
+	readPosition int  // current char 之后的
+	ch           byte // l[position] = ch 正在被处理的ch
 }
 
 func New(input string) *Lexer {
