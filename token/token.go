@@ -12,7 +12,7 @@ const (
 	EOF     = "EOF"
 
 	// Identifiers + literals
-	IDENT = "IDENT" // foo, bar, x, y
+	IDENTIFIER = "IDENTIFIER" // foo, bar, x, y
 	INT   = "INT"   // 1,2,3
 
 	// 操作符
@@ -62,5 +62,5 @@ func LookupIndent(ident string) TokenType {
 	if tok, ok := keywords[ident]; ok {
 		return tok
 	}
-	return IDENT
+	return IDENTIFIER
 }
