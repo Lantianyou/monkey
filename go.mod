@@ -1,3 +1,3 @@
-module tianyou.net/monkey
+module monkey
 
-go 1.18
+go 1.19
